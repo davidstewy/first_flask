@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Chosen Recipe</title>
+  </head>
+  <body>
+    <ul id="recipe">
+      {% for item in recipe %}
+      <li>
+        <p>
+          <b>{{ item }}:</b> {{ recipe[item] }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
